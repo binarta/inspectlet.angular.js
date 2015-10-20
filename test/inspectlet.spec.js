@@ -51,10 +51,6 @@ describe('inspectlet', function () {
                 expect($window.__insp).toContain(['wid', 1234]);
             });
 
-            it('session is tagged with namespace', function () {
-                expect($window.__insp).toContain(['tagSession', {namespace: 'namespace'}]);
-            });
-
             it('script is loaded', function () {
                 expect(resourceLoader.addScript).toHaveBeenCalledWith('https://cdn.inspectlet.com/inspectlet.js');
             });

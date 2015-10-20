@@ -18,7 +18,6 @@
                 $window.__inspld = 1;
                 $window.__insp = $window.__insp || [];
                 $window.__insp.push(['wid', config.inspectletSiteId]);
-                $window.__insp.push(['tagSession', {namespace: config.namespace}]);
                 resourceLoader.addScript('https://cdn.inspectlet.com/inspectlet.js');
 
                 fetchAccountMetadata({
