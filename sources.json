@@ -1,0 +1,5 @@
+{
+  "default": {
+    "inspectlet": "bower_components/binarta.inspectlet.angular/src/inspectlet.js"
+  }
+}

@@ -57,7 +57,7 @@ describe('inspectlet', function () {
 
             describe('and user is signed in', function () {
                 beforeEach(function () {
-                    fetchAccountMetadata.calls[0].args[0].ok({email: 'test@email.com'});
+                    fetchAccountMetadata.calls.first().args[0].ok({email: 'test@email.com'});
                 });
 
                 it('associate user with session', function () {
